@@ -1,0 +1,55 @@
+ami-097947612b141c026
+{
+    "GroupId": "sg-004de79a86c8a69a5",
+    "SecurityGroupArn": "arn:aws:ec2:us-east-1:310063302961:security-group/sg-004de79a86c8a69a5"
+}
+
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-06780f055798b42c9",
+            "GroupId": "sg-004de79a86c8a69a5",
+            "GroupOwnerId": "310063302961",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "CidrIpv4": "0.0.0.0/0",
+            "SecurityGroupRuleArn": "arn:aws:ec2:us-east-1:310063302961:security-group-rule/sgr-06780f055798b42c9"
+        }
+    ]
+}
+
+    "ReservationId": "r-0309a6d7d8ec0f28a",
+    "OwnerId": "310063302961",
+    "Groups": [],
+    "Instances": [
+        {
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "6bffa40d-c033-45a7-a174-8631fc50fc9b",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2025-05-07T18:31:29+00:00",
+                        "AttachmentId": "eni-attach-0d4a9a9ab0cf040ff",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "NetworkCardIndex": 0
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupId": "sg-004de79a86c8a69a5",
+                            "GroupName": "my-ec2-sg"
+                        }
+:
+
+i-084ab42a1e563ad4f |  54.166.225.77  
+
+i-084ab42a1e563ad4f
