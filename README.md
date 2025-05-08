@@ -79,10 +79,22 @@ aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" -
 - Copy địa chỉ IP để SSH.
 
 ### 6. SSH vào EC2
-```bash
+```de
 ssh -i my-key-pair.pem ec2-user@<Public-IP>
 ```
 - `<Public-IP>` là IP vừa lấy ở bước trên.
+
+### 7. Xóa (terminate) EC2 instance
+
+Để xóa một EC2 instance, bạn cần biết InstanceId của instance muốn xóa. Có thể lấy InstanceId từ lệnh ở bước 5 hoặc từ AWS Console.
+
+```bash
+yarn global add aws-cli # Nếu chưa cài aws-cli, dùng yarn
+aws ec2 terminate-instances --instance-ids <InstanceId>
+```
+- Thay `<InstanceId>` bằng ID của instance bạn muốn xóa, ví dụ: `i-0abcd1234efgh5678`.
+
+Sau khi chạy lệnh này, instance sẽ chuyển sang trạng thái "shutting-down" và sau đó là "terminated". Bạn sẽ không bị tính phí cho instance đã bị terminate.
 
 ---
 **Lưu ý:**
